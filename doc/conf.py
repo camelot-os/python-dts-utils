@@ -47,7 +47,7 @@ todo_include_todos = True
 
 html_theme = "sphinx_rtd_theme"
 
-# Any idea for non outpost specific python package ?
+# Any idea for non camelot specific python package ?
 # html_logo = '_static/figures/sentry_kernel.png'
 
 html_static_path = ["_static"]
@@ -72,7 +72,7 @@ simplepdf_vars = {
     "cover": "#ffffff",
     "white": "#ffffff",
     "links": "#6299C4",
-    # "cover-bg": "url(figures/outpost_fp.png) no-repeat center",
+    # "cover-bg": "url(figures/camelot_fp.png) no-repeat center",
     "cover-overlay": "rgba(62, 99, 196, 0.5)",
     "top-left-content": "counter(page)",
     # "bottom-center-content": "Outpost documentation suite: Sentry kernel concepts",

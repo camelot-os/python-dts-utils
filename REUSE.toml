@@ -5,7 +5,7 @@
 version = 1
 SPDX-PackageName = "dts-utils"
 SPDX-PackageSupplier = "Ledger SAS <firmware@ledger.fr>"
-SPDX-PackageDownloadLocation = "https://github.com/outpost-os/python-dts-utils"
+SPDX-PackageDownloadLocation = "https://github.com/camelot-os/python-dts-utils"
 
 [[annotations]]
 path = "doc/**"

@@ -97,14 +97,14 @@ def f_owner(value: Node) -> int:
     InvalidTemplateValueType
         If `value` parameter is not an instance of dts node
     InvalidPropertyValueType
-        If `outpost,owner` is not an instance of `int` type
+        If `sentry,owner` is not an instance of `int` type
     InvalidPropertyValue
-        If `outpost,owner` is set to 0, this is a reserved value for internal kernel usage
+        If `sentry,owner` is set to 0, this is a reserved value for internal kernel usage
     """
     if not isinstance(value, Node):
         raise InvalidTemplateValueType("owner", type(value), Node)
 
-    prop = "outpost,owner"
+    prop = "sentry,owner"
     if prop in value._node.props:
         owner_label = getattr(value, prop)
         if not isinstance(owner_label, int):
@@ -162,7 +162,7 @@ def f_owned(value: list[Node]) -> list[Node]:
     Returns
     -------
     list[Node]
-        A filtered list w/ only nodes w/ `outpost,owner` different from 0
+        A filtered list w/ only nodes w/ `sentry,owner` different from 0
 
     Raises
     ------

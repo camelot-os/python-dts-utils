@@ -37,12 +37,12 @@ def test_filter_owner_exceptions(dts_file):
 
 def test_filter_has_property(dts_file):
     i2c1 = dts_file.dts.i2c1
-    assert dts_utils.filters.f_has_property(i2c1, "outpost,owner")
+    assert dts_utils.filters.f_has_property(i2c1, "sentry,owner")
 
 
 def test_filter_has_property_exception(dts_file):
     try:
-        dts_utils.filters.f_has_property(dts_file.dts, "outpost,owner")
+        dts_utils.filters.f_has_property(dts_file.dts, "sentry,owner")
         assert False
     except dts_utils.exceptions.InvalidTemplateValueType:
         assert True
@@ -50,17 +50,17 @@ def test_filter_has_property_exception(dts_file):
 
 def test_filter_with_property(dts_file):
     dev_list = dts_utils.filters.f_peripherals(dts_file.dts.root)
-    assert len(dts_utils.filters.f_with_property(dev_list, "outpost,owner")) == 1
+    assert len(dts_utils.filters.f_with_property(dev_list, "sentry,owner")) == 1
 
 
 def test_filter_with_property_exception(dts_file):
     try:
-        dts_utils.filters.f_with_property(dts_file.dts, "outpost,owner")
+        dts_utils.filters.f_with_property(dts_file.dts, "sentry,owner")
         assert False
     except dts_utils.exceptions.InvalidTemplateValueType:
         assert True
     try:
-        dts_utils.filters.f_with_property(dts_file.dts.usart1, "outpost,owner")
+        dts_utils.filters.f_with_property(dts_file.dts.usart1, "sentry,owner")
         assert False
     except dts_utils.exceptions.InvalidTemplateValueType:
         assert True
