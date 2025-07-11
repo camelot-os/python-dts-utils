@@ -37,10 +37,10 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/outpost-os"
+Homepage = "https://github.com/camelot-os"
 # Documentation =
-Repository = "https://github.com/outpost-os/python-dts-utils"
-Issues = "https://github.com/outpost-os/python-dts-utils/issues"
+Repository = "https://github.com/camelot-os/python-dts-utils"
+Issues = "https://github.com/camelot-os/python-dts-utils/issues"
 
 [project.scripts]
 dts_dump = 'dts_utils.dump:main'

@@ -5,7 +5,7 @@
 name: Proposing a feature/enancement
 description: File an evolution proposition
 title: "feature: "
-projects: ["outpost-os/1"]
+projects: ["camelot-os/1"]
 assignees:
   - fvalette-ledger
   - pthierry-ledger
