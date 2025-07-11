@@ -839,27 +839,27 @@
   #size-cells = <1>;
   kernel_code: kernel_code@8000000 {
    reg = <0x8000000 0x8000>;
-   compatible = "outpost,memory-pool";
+   compatible = "sentry,memory-pool";
   };
   idle_code: idle_code@8008000 {
    reg = <0x8008000 0x300>;
-   compatible = "outpost,memory-pool";
+   compatible = "sentry,memory-pool";
   };
   autotest_code: autotest_code@800a000 {
    reg = <0x800a000 0xe000>;
-   compatible = "outpost,memory-pool";
+   compatible = "sentry,memory-pool";
   };
   kernel_ram: kernel_memory@20000000 {
    reg = <0x20000000 0x2000>;
-   compatible = "outpost,memory-pool";
+   compatible = "sentry,memory-pool";
   };
   idle_ram: idle_memory@20004000 {
    reg = <0x20004000 0x200>;
-   compatible = "outpost,memory-pool";
+   compatible = "sentry,memory-pool";
   };
   autotest_ram: autotest_memory@20008000 {
    reg = <0x20008000 0x1000>;
-   compatible = "outpost,memory-pool";
+   compatible = "sentry,memory-pool";
   };
  };
 };
@@ -872,7 +872,7 @@
     };
  led0: led_0 {
   compatible = "gpio-leds";
-  outpost,owner = <0xbabe>;
+  sentry,owner = <0xbabe>;
   pinctrl-0 = <&led_pc7 &led_pc7>;
   status = "disabled";
  };
@@ -882,23 +882,23 @@
   shm_autotest_1: memory@2000a000 {
    reg = <0x2000a000 0x256>;
    dma-pool;
-   outpost,shm;
-   outpost,label = <0xf00>;
-   outpost,owner = <0xbabe>;
+   sentry,shm;
+   sentry,label = <0xf00>;
+   sentry,owner = <0xbabe>;
   };
   shm_autotest_2: memory@2000b000 {
    reg = <0x2000b000 0x100>;
-   outpost,shm;
+   sentry,shm;
    dma-pool;
-   outpost,no-map;
-   outpost,label = <0xf01>;
-   outpost,owner = <0xbabe>;
+   sentry,no-map;
+   sentry,label = <0xf01>;
+   sentry,owner = <0xbabe>;
   };
   shm_autotest_3: memory@2000b100 {
    reg = <0x2000b100 0x100>;
-   outpost,shm;
-   outpost,label = <0xf02>;
-   outpost,owner = <0xbabe>;
+   sentry,shm;
+   sentry,label = <0xf02>;
+   sentry,owner = <0xbabe>;
   };
  };
 };
@@ -935,7 +935,7 @@
 };
 &i2c1 {
  status = "okay";
- outpost,owner = <0xbabe>;
+ sentry,owner = <0xbabe>;
 };
 &rcc {
  clocks = <&pll1>;

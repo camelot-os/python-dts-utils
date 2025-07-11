@@ -4,17 +4,17 @@ SPDX-FileCopyrightText: 2024 Ledger SAS
 SPDX-License-Identifier: Apache-2.0
 -->
 
-[![REUSE status](https://api.reuse.software/badge/github.com/outpost-os/python-dts-utils)](https://api.reuse.software/info/github.com/outpost-os/python-dts-utils)
+[![REUSE status](https://api.reuse.software/badge/github.com/camelot-os/python-dts-utils)](https://api.reuse.software/info/github.com/camelot-os/python-dts-utils)
 
 ![PyPI - Version](https://img.shields.io/pypi/v/dts-utils)
 ![PyPI - License](https://img.shields.io/pypi/l/dts-utils)
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/dts-utils)
 
-[![codecov](https://codecov.io/gh/outpost-os/python-dts-utils/graph/badge.svg?token=SGQPBE40UI)](https://codecov.io/gh/outpost-os/python-dts-utils)
-![lint](https://github.com/outpost-os/python-dts-utils/actions/workflows/lint.yml/badge.svg)
-![unittest](https://github.com/outpost-os/python-dts-utils/actions/workflows/unittest.yml/badge.svg)
-![doc](https://github.com/outpost-os/python-dts-utils/actions/workflows/doc.yml/badge.svg)
-![quality](https://github.com/outpost-os/python-dts-utils/actions/workflows/quality.yml/badge.svg)
+[![codecov](https://codecov.io/gh/camelot-os/python-dts-utils/graph/badge.svg?token=SGQPBE40UI)](https://codecov.io/gh/camelot-os/python-dts-utils)
+![lint](https://github.com/camelot-os/python-dts-utils/actions/workflows/lint.yml/badge.svg)
+![unittest](https://github.com/camelot-os/python-dts-utils/actions/workflows/unittest.yml/badge.svg)
+![doc](https://github.com/camelot-os/python-dts-utils/actions/workflows/doc.yml/badge.svg)
+![quality](https://github.com/camelot-os/python-dts-utils/actions/workflows/quality.yml/badge.svg)
 
 # dts-utils python package
 `dts-utils` is an utility python package that aims to ease dts handling in python and source code

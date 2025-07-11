@@ -51,7 +51,7 @@ def is_enabled(value: Node) -> bool:
 def is_owned(value: Node) -> bool:
     """Owned custom jinja test.
 
-    Custom jinja test that return true if Node has a valid `outpost,owner` property
+    Custom jinja test that return true if Node has a valid `sentry,owner` property
 
     Parameters
     ----------
@@ -61,7 +61,7 @@ def is_owned(value: Node) -> bool:
     Returns
     -------
     bool
-        True if `outpost,owner` is valid
+        True if `sentry,owner` is valid
 
     Raises
     ------
@@ -78,7 +78,7 @@ def is_owned(value: Node) -> bool:
 def is_owned_by(value: Node, label: int) -> bool:
     """Owned_by custom jinja test.
 
-    Custom jinja test that return true if Node owner `outpost,owner` matches the given one
+    Custom jinja test that return true if Node owner `sentry,owner` matches the given one
 
     Parameters
     ----------
@@ -90,7 +90,7 @@ def is_owned_by(value: Node, label: int) -> bool:
     Returns
     -------
     bool
-        True if `outpost,owner` equals `label` parameter, False otherwise
+        True if `sentry,owner` equals `label` parameter, False otherwise
 
     Raises
     ------
