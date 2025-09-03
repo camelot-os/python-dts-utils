@@ -57,7 +57,13 @@ class Dts:
         nodes = []
         for n in self._dt.node_iter():
             node = Node(n)
-            if node.reg and node.reg[0] != 0 and node.reg[1] > 0:
+            if (
+                node.reg
+                and isinstance(node.reg, list)
+                and len(node.reg) >= 2
+                and node.reg[0] != 0
+                and node.reg[1] > 0
+            ):
                 nodes.append(node)
         return nodes
 
